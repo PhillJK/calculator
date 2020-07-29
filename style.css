@@ -28,7 +28,6 @@
     height: 350px;
     width: 280px;
     justify-content: space-between;
-    cursor: pointer;
 }
 
 .btn {
@@ -36,7 +35,8 @@
     height: 19.5%;
     width: 24.5%;
     border: 1px solid #d8d9db;
-    font-size: 30px;    
+    font-size: 30px;  
+    cursor: pointer;  
 }
 
 .btn:hover {
