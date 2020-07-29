@@ -62,7 +62,7 @@ function calculate(num1,num2,operator) {
     } else {
         result = 0;
     }
-    return Math.round(result);
+    return String(Math.round(result));
 }
 
 equalButton.addEventListener("click", function() {
