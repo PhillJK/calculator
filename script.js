@@ -33,7 +33,7 @@ backspaceButton.addEventListener("click", function() {
 
 for(let operator of operators) {
     operator.addEventListener("click", function(event) {
-        number1 = screen.innerText;
+        number1 = Number(Math.floor(screen.innerText));
         screen.innerText = "0";
         opt = event.target.innerText;
     });
@@ -62,10 +62,10 @@ function calculate(num1,num2,operator) {
     } else {
         result = 0;
     }
-    return String(Math.round(result));
+    return result;
 }
 
 equalButton.addEventListener("click", function() {
-    number2 = screen.innerText;
+    number2 = Number(Math.floor(screen.innerText));
     screen.innerText = calculate(number1,number2,opt);
 });
