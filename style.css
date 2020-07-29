@@ -50,12 +50,12 @@
     width: 74.5%;
 }
 
-.btn.operator {
+.btn.operator, .btn.equal {
     background-color: #df974c;
     border: 1px solid #df974c;
 }
 
-.btn.operator:hover {
+.btn.operator:hover, .btn.equal:hover {
     background-color: #cf784a;
 }
 
