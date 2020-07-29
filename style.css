@@ -28,6 +28,7 @@
     height: 350px;
     width: 280px;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .btn {
