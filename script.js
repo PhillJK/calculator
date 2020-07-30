@@ -77,6 +77,9 @@ function calculate(num1,num2,operator) {
 }
 
 equalButton.addEventListener("click", function() {
+    if(Number.isNaN(number1)) {
+        number1 = 0;
+    }
     number2 = Number(Math.floor(screen.innerText));
     screen.innerText = calculate(number1,number2,opt);
     watchTheScreen();
