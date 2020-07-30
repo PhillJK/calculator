@@ -31,7 +31,7 @@ backspaceButton.addEventListener("click", function() {
 });
 
 function watchTheScreen() {
-    if(screen.innerText == ""){
+    if(screen.innerText == "" || screen.innerText == "NaN"){
         return screen.innerText = "0"
     } else {
         return screen.innerText;
@@ -41,12 +41,7 @@ function watchTheScreen() {
 
 for(let operator of operators) {
     operator.addEventListener("click", function(event) {
-        if(screen.innerText == "NaN") {
-            screen.innerText = "0";
-            number1 = 0;
-        } else {
-            number1 = Number(Math.floor(screen.innerText));
-        }
+        number1 = Number(Math.floor(screen.innerText));
         screen.innerText = "0";
         opt = event.target.innerText;
     });
@@ -84,4 +79,5 @@ function calculate(num1,num2,operator) {
 equalButton.addEventListener("click", function() {
     number2 = Number(Math.floor(screen.innerText));
     screen.innerText = calculate(number1,number2,opt);
+    watchTheScreen();
 });
