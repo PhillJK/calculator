@@ -33,7 +33,12 @@ backspaceButton.addEventListener("click", function() {
 
 for(let operator of operators) {
     operator.addEventListener("click", function(event) {
-        number1 = Number(Math.floor(screen.innerText));
+        if(screen.innerText == "Impossible") {
+            screen.innerText = "0";
+            number1 = 0;
+        } else {
+            number1 = Number(Math.floor(screen.innerText));
+        }
         screen.innerText = "0";
         opt = event.target.innerText;
     });
@@ -61,6 +66,9 @@ function calculate(num1,num2,operator) {
         result = parseInt(num1) / parseInt(num2);
     } else {
         result = 0;
+    }
+    if(result == Infinity || result == NaN) {
+        return screen.innerText = "Impossible"
     }
     return result;
 }
