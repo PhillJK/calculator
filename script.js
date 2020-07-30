@@ -22,14 +22,6 @@ clearButton.addEventListener("click", function() {
     screen.innerText = "0"
 });
 
-// backspaceButton.addEventListener("click", function() {
-//     if(screen.innerText != "" && screen.innerText != "Impossible") {
-//         screen.innerText = screen.innerText.slice(0,-1);
-//     } else {
-//         screen.innerText = "0"; 
-//     }
-// });
-
 backspaceButton.addEventListener("click", function() {
     if(screen.innerText == "Impossible") {
         screen.innerText = "0";
