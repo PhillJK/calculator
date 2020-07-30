@@ -41,7 +41,7 @@ function watchTheScreen() {
 
 for(let operator of operators) {
     operator.addEventListener("click", function(event) {
-        if(screen.innerText == "Impossible") {
+        if(screen.innerText == "NaN") {
             screen.innerText = "0";
             number1 = 0;
         } else {
