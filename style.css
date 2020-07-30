@@ -18,6 +18,8 @@
     padding: 20px;
     color: white;
     text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 30px;
     font-family: monospace;
 }
