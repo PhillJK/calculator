@@ -36,7 +36,7 @@ function watchTheScreen() {
     } else {
         return screen.innerText;
     }
- }
+}
 
 
 for(let operator of operators) {
