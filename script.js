@@ -70,8 +70,8 @@ function calculate(num1,num2,operator) {
     } else {
         result = 0;
     }
-    if(result == Infinity || result == -Infinity || result == NaN) {
-        return screen.innerText = "Impossible"
+    if(result == Infinity || result == -Infinity || Number.isNaN(result)) {
+        return screen.innerText = "Impossible";
     }
     return result;
 }
